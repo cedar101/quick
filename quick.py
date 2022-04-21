@@ -55,6 +55,7 @@ class GStyle(object):
             }
         .GListView{
             font-size: 16px;
+            height: 40px;
             }
         QToolTip{
             font-family: serif;
@@ -131,6 +132,8 @@ class GListView(QtWidgets.QListView):
                     self.model.removeRow(i.row())
         super(GListView, self).keyPressEvent(e)
 
+    def sizeHint(self):
+        return QtCore.QSize(0, 0)
 
 class GItemModel(QtGui.QStandardItemModel):
     def __init__(self, n, parent=None, opt_type=click.STRING, default=None):

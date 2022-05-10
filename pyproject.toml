@@ -5,7 +5,7 @@ description = ""
 authors = [
     {name = "Shen Zhou", email = "shenz34206@hotmail.com"},
 ]
-dependencies = ["click>=6.5", "pyqt5"]
+dependencies = ["click>=6.5", "qtpy"]
 requires-python = ">=3.7"
 license = {text = "GPL"}
 
